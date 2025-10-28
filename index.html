@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parillada MOJO - Auténtica Parrilla Argentina</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h1>Parillada <span class="highlight">MOJO</span></h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#menu">Menú</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#ubicacion">Ubicación</a></li>
+                    <li><a href="#contacto" class="btn-contact">Contacto</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Parillada <span class="highlight">MOJO</span></h1>
+            <p class="hero-subtitle">Auténtica parrilla uruguaya en Ciudad Vieja</p>
+            <p class="hero-description">Descubre el verdadero sabor de las carnes a la parrilla con más de 20 años de tradición familiar en el corazón histórico de Montevideo</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">Ver Menú</a>
+                <a href="#contacto" class="btn btn-secondary">Hacer Reserva</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Parrilla Argentina">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Nuestra Historia</h2>
+                    <p>Desde hace más de dos décadas, Parillada MOJO ha sido sinónimo de excelencia en carnes a la parrilla en Ciudad Vieja, Montevideo. Mantenemos la tradición rioplatense de cocinar a fuego lento, con leña de quebracho, para lograr el sabor auténtico que nos caracteriza.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-fire"></i>
+                            <h3>Parrilla a Leña</h3>
+                            <p>Cocción tradicional con leña de quebracho</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-award"></i>
+                            <h3>Calidad Premium</h3>
+                            <p>Carnes seleccionadas de la mejor calidad</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-users"></i>
+                            <h3>Tradición Familiar</h3>
+                            <p>Recetas transmitidas por generaciones</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Asado Argentino">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2 class="section-title">Nuestro Menú</h2>
+            <div class="menu-categories">
+                <div class="menu-category active" data-category="carnes">Carnes</div>
+                <div class="menu-category" data-category="parrillada">Parrilladas</div>
+                <div class="menu-category" data-category="guarniciones">Guarniciones</div>
+                <div class="menu-category" data-category="bebidas">Bebidas</div>
+            </div>
+            
+            <div class="menu-content">
+                <!-- Carnes -->
+                <div class="menu-items active" id="carnes">
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Bife de Chorizo">
+                        <div class="menu-item-content">
+                            <h3>Bife de Chorizo</h3>
+                            <p>Corte premium de 350gr a la parrilla, jugoso y tierno</p>
+                            <span class="price">$4,500</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1588168333986-5078d3ae3976?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Asado de Tira">
+                        <div class="menu-item-content">
+                            <h3>Asado de Tira</h3>
+                            <p>Tradicional corte rioplatense con hueso, cocción lenta</p>
+                            <span class="price">$3,800</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1553909489-cd47e0ef937f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Entraña">
+                        <div class="menu-item-content">
+                            <h3>Entraña</h3>
+                            <p>Corte suave y sabroso, perfectamente marinado</p>
+                            <span class="price">$4,200</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Parrilladas -->
+                <div class="menu-items" id="parrillada">
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1504973960431-1c467e159aa4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Parrillada Completa">
+                        <div class="menu-item-content">
+                            <h3>Parrillada MOJO (2 personas)</h3>
+                            <p>Asado, chorizo, morcilla, riñón, mollejas y vacío</p>
+                            <span class="price">$8,900</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Parrillada Familiar">
+                        <div class="menu-item-content">
+                            <h3>Parrillada Familiar (4 personas)</h3>
+                            <p>Surtido completo de carnes y achuras para compartir</p>
+                            <span class="price">$16,500</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Parrillada Premium">
+                        <div class="menu-item-content">
+                            <h3>Parrillada Premium (2 personas)</h3>
+                            <p>Cortes premium: bife de chorizo, entraña y lomo</p>
+                            <span class="price">$12,800</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Guarniciones -->
+                <div class="menu-items" id="guarniciones">
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1518013431117-eb1465fa5752?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Papas Fritas">
+                        <div class="menu-item-content">
+                            <h3>Papas Fritas Caseras</h3>
+                            <p>Papas cortadas a mano, crujientes por fuera</p>
+                            <span class="price">$1,200</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Ensalada Mixta">
+                        <div class="menu-item-content">
+                            <h3>Ensalada Mixta</h3>
+                            <p>Lechuga, tomate, cebolla y zanahoria</p>
+                            <span class="price">$1,800</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1607301405390-d831c242c8b6?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Provoleta">
+                        <div class="menu-item-content">
+                            <h3>Provoleta</h3>
+                            <p>Queso provolone a la parrilla con orégano</p>
+                            <span class="price">$2,200</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bebidas -->
+                <div class="menu-items" id="bebidas">
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Vino Tinto">
+                        <div class="menu-item-content">
+                            <h3>Vino Tinto de la Casa</h3>
+                            <p>Tannat uruguayo, botella 750ml</p>
+                            <span class="price">$3,200</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Cerveza">
+                        <div class="menu-item-content">
+                            <h3>Cerveza Tirada</h3>
+                            <p>Pinta de cerveza rubia, bien fría</p>
+                            <span class="price">$800</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Gaseosas">
+                        <div class="menu-item-content">
+                            <h3>Gaseosas</h3>
+                            <p>Coca Cola, Sprite, Fanta - 500ml</p>
+                            <span class="price">$600</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="galeria" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Galería</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Parrilla">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Asado">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Bife">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Parrillada">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1504973960431-1c467e159aa4?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Carnes">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1607301405390-d831c242c8b6?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Provoleta">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="ubicacion" class="location">
+        <div class="container">
+            <h2 class="section-title">Nuestra Ubicación</h2>
+            <div class="location-content">
+                <div class="location-info">
+                    <h3>Visitanos</h3>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Dirección</h4>
+                            <p>Ciudad Vieja, Montevideo, Uruguay</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Horarios</h4>
+                            <p>Lunes a Domingo: 19:00 - 01:00</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Teléfono</h4>
+                            <p>+598 99 123 456</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4060.0688874741554!2d-56.21108092424635!3d-34.90863757284656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f7f0514279ca3%3A0x9fab593cc3ed3e40!2sMOJO%20Parrillada!5e1!3m2!1ses-419!2suy!4v1761694281108!5m2!1ses-419!2suy" 
+                            width="100%" 
+                            height="400" 
+                            style="border:0; border-radius: 15px;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contacto y Reservas</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>¡Hacé tu reserva!</h3>
+                    <p>Para garantizar tu mesa en Parillada MOJO, te recomendamos hacer una reserva. Nuestro equipo estará encantado de atenderte.</p>
+                    <div class="contact-methods">
+                        <a href="tel:+59899123456" class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Llamanos</h4>
+                                <p>+598 99 123 456</p>
+                            </div>
+                        </a>
+                        <a href="https://wa.me/59899123456" class="contact-method" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            <div>
+                                <h4>WhatsApp</h4>
+                                <p>Mensaje directo</p>
+                            </div>
+                        </a>
+                        <a href="mailto:reservas@parilladamojo.com" class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>reservas@parilladamojo.com</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="reservation-form">
+                    <form id="reservationForm">
+                        <h3>Formulario de Reserva</h3>
+                        <div class="form-group">
+                            <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="date" id="fecha" name="fecha" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="time" id="hora" name="hora" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <select id="personas" name="personas" required>
+                                <option value="">Cantidad de personas</option>
+                                <option value="1">1 persona</option>
+                                <option value="2">2 personas</option>
+                                <option value="3">3 personas</option>
+                                <option value="4">4 personas</option>
+                                <option value="5">5 personas</option>
+                                <option value="6">6 personas</option>
+                                <option value="7">7 personas</option>
+                                <option value="8">8 personas</option>
+                                <option value="mas">Más de 8 personas</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="comentarios" name="comentarios" placeholder="Comentarios adicionales (opcional)"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Reserva</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Parillada MOJO</h3>
+                    <p>Auténtica parrilla uruguaya con más de 20 años de tradición familiar en Ciudad Vieja, Montevideo.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Ciudad Vieja, Montevideo</p>
+                    <p><i class="fas fa-phone"></i> +598 99 123 456</p>
+                    <p><i class="fas fa-envelope"></i> info@parilladamojo.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Horarios</h4>
+                    <p>Lunes a Domingo</p>
+                    <p>19:00 - 01:00</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Parillada MOJO. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
